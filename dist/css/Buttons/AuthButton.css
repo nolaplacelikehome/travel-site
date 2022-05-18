@@ -9,21 +9,21 @@ button {
   background: none;
   margin-right: 10px;
   padding: 12px 30px;
-  color: #89cff0;
-  border: solid 2px #89cff0;
+  color: #007FFF;
+  border: solid 2px #007FFF;
 }
 .Login:hover {
-  background-color: #89cff0;
+  background-color: #007FFF;
   color: white;
 }
 
 .Signup {
-  background-color: #89cff0;
+  background-color: #007FFF;
   color: white;
   padding: 14px 32px;
 }
 .Signup:hover {
-  background-color: #6bc3ec;
+  background-color: #006edd;
 }
 
 /*# sourceMappingURL=AuthButton.css.map */

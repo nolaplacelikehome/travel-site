@@ -9,7 +9,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 5px;
-  font-size: xx-large;
+  font-size: 40px;
 }
 .search-container p {
   color: white;
@@ -20,14 +20,18 @@
   display: flex;
   background-color: white;
   align-items: center;
+  padding: 5px;
 }
 .search-container input {
   width: 88%;
   border: none;
   height: 40px;
 }
-.search-container input:input {
+.search-container input:focus {
   outline: none;
+}
+.search-container input::placeholder {
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=DestinationSearch.css.map */

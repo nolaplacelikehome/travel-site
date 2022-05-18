@@ -8,7 +8,7 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		word-spacing: 5px;
-		font-size: xx-large;
+		font-size: 40px;
 	}
 	p {
 		color: white;
@@ -19,13 +19,17 @@
 		display: flex;
 		background-color: white;
 		align-items: center;
+		padding: 5px;
 	}
 	input {
 		width: 88%;
 		border: none;
 		height: 40px;
-		&:input {
+		&:focus {
 			outline: none;
+		}
+		&::placeholder {
+			letter-spacing: 2px;
 		}
 	}
 }

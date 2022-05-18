@@ -8,7 +8,7 @@ export default function DestinationSearch() {
 			<h2>Where do you want to go?</h2>
 			<p>You'll get recommendations tailored to your interests</p>
 			<form action="">
-				<input type="text" />
+				<input type="text" placeholder='WHERE DO YOU WANT TO GO?' />
 				<SearchButton />
 			</form>
 		</div>

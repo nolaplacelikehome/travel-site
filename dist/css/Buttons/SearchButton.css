@@ -3,9 +3,8 @@ button {
   border: none;
   height: 90%;
   color: white;
-  background-color: #89cff0;
-  padding-left: 15px;
-  margin-right: 5px;
+  background-color: #007FFF;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=SearchButton.css.map */

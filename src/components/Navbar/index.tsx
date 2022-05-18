@@ -9,7 +9,7 @@ export default function DesktopNavbar() {
 	return (
 		<div className="nav-container">
 			<div className="brand">
-				<div className="logo"><FontAwesomeIcon icon={faHouseChimney} size="3x" color='#89cff0' /></div>
+				<div className="logo"><FontAwesomeIcon icon={faHouseChimney} size="3x" color='#007FFF' /></div>
 				<div className="name">
 					<h2 className="name-top">Travely</h2>
 					<div className="name-bottom">Travel anywhere</div>
