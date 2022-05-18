@@ -1,0 +1,17 @@
+.first-section-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-section-container p {
+  margin-bottom: 10px;
+}
+.first-section-container h2 {
+  max-width: 40ch;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=FirstSection.css.map */

@@ -1,0 +1,18 @@
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  padding: 0 20px;
+}
+nav ul * {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+nav ul *:hover {
+  color: #89cff0;
+}
+
+/*# sourceMappingURL=Navigation.css.map */

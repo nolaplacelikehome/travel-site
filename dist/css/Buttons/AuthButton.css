@@ -1,0 +1,29 @@
+button {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.Login {
+  background: none;
+  margin-right: 10px;
+  padding: 12px 30px;
+  color: #89cff0;
+  border: solid 2px #89cff0;
+}
+.Login:hover {
+  background-color: #89cff0;
+  color: white;
+}
+
+.Signup {
+  background-color: #89cff0;
+  color: white;
+  padding: 14px 32px;
+}
+.Signup:hover {
+  background-color: #6bc3ec;
+}
+
+/*# sourceMappingURL=AuthButton.css.map */

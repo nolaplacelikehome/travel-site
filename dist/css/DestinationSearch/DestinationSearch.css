@@ -1,0 +1,33 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-container h2 {
+  color: white;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-size: xx-large;
+}
+.search-container p {
+  color: white;
+  margin-bottom: 18px;
+}
+.search-container form {
+  width: 80%;
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.search-container input {
+  width: 88%;
+  border: none;
+  height: 40px;
+}
+.search-container input:input {
+  outline: none;
+}
+
+/*# sourceMappingURL=DestinationSearch.css.map */
