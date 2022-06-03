@@ -1,0 +1,49 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (max-width: 890px) {
+  .carousel-container {
+    gap: 40px;
+  }
+}
+.carousel-container .img-item {
+  height: 350px;
+  width: 200px;
+  cursor: pointer;
+}
+.carousel-container .img-item .img-text {
+  position: relative;
+  width: 70%;
+  bottom: 50px;
+  left: 10px;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+.carousel-container .img-item img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .carousel-container .img-5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .carousel-container .img-4 {
+    display: none;
+  }
+  .carousel-container .img-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .carousel-container .img-2 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=TripCarousel.css.map */

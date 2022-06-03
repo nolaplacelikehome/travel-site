@@ -1,0 +1,44 @@
+@use '../mixins' as query;
+
+.tripdropdown-container {
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		padding: 16px 32px;
+		background-color: #007FFF;
+		border-radius: 6px;
+		cursor: pointer;
+		&:hover {
+			display: block;
+		}
+		&:focus {
+			display: block;
+		}
+		span {
+			color: white;
+			font-weight: bold;
+			font-size: small;
+			text-transform: uppercase;
+		}
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		margin-top: 5px;
+		padding: 12px 16px;
+		z-index: 1;
+		&:hover {
+			display: block;
+		}
+		&:focus {
+			display: block;
+		}
+		p {
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+	}
+}

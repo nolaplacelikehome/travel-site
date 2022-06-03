@@ -1,0 +1,104 @@
+@use '../mixins' as query;
+
+.mobile-nav-bar {
+	position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 30px 0;
+  padding: 0 15px;
+  width: 100%;
+  z-index: 1;
+	nav {
+    position: sticky;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    width: 175px;
+    -webkit-tap-highlight-color: transparent;
+  
+    .background {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: #F6F5F4;
+    }
+    ul {
+      padding: 25px;
+      position: fixed;
+      top: 75px;
+      width: 150px;
+    }
+
+    li:not(:first-child) {
+      padding-top: 20px;
+    }
+    
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+
+      * {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  
+  
+    button {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: transparent;
+    }
+  }
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  padding: 10px 0 0 10px;
+	h3 {
+		padding: 0;
+		margin: 0;
+		color: black;
+	}
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  .name-top {
+    color: white;
+    font-size: x-large;
+    @include query.for-mobile {
+      font-size: large
+    }
+  }
+	.name-bottom {
+		font-size: smaller;
+		font-weight: lighter;
+    color: white;
+    font-size: large;
+    @include query.for-mobile {
+      font-size: medium;
+    }
+	}
+}
+}

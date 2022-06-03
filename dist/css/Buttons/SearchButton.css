@@ -1,10 +1,16 @@
-button {
-  padding: 10px 20px;
+.search-btn {
+  padding: 10px 30px;
   border: none;
   height: 90%;
   color: white;
   background-color: #007FFF;
   font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .search-btn {
+    height: 40px;
+  }
 }
 
 /*# sourceMappingURL=SearchButton.css.map */

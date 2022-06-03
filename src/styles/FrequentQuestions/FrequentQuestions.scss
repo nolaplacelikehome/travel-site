@@ -1,0 +1,49 @@
+@use '../mixins' as query;
+
+.questions-container {
+	height: 740px;
+	width: 100%;
+	background-color: #F5F5F5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	border-radius: 6px;
+	@include query.for-small-tablet {
+			width: 100%;
+			height: auto;
+		}
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	.accordian {
+		background-color: white;
+		padding: 20px;
+		width: 800px;
+		transition: all 0.3s;
+		margin-bottom: 15px;
+		@include query.for-small-tablet {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+	.title-left {
+		display: flex;
+		gap: 10px;
+	}
+	.accordian-title {
+		display: flex;
+		justify-content: space-between;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		cursor: pointer;
+		.sign {
+			font-weight: bolder;
+			font-size: 20px;
+		}
+	}
+	.accordian-info {
+		margin-bottom: 20px;
+	}
+}

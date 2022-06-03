@@ -1,3 +1,5 @@
+@use '../mixins' as query;
+
 .search-container {
 	display: flex;
 	flex-direction: column;
@@ -9,10 +11,16 @@
 		letter-spacing: 2px;
 		word-spacing: 5px;
 		font-size: 40px;
+		@include query.for-tablet {
+			display: none;
+		}
 	}
 	p {
 		color: white;
 		margin-bottom: 18px;
+		@include query.for-tablet {
+			display: none;
+		}
 	}
 	form {
 		width: 80%;
@@ -31,5 +39,20 @@
 		&::placeholder {
 			letter-spacing: 2px;
 		}
+		@include query.for-tablet {
+			margin-bottom: 30px;
+			width: 300px;
+			font-size: 16px;
+			box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			&::placeholder {
+				letter-spacing: 1px;
+				padding-left: 6px;
+			}
+		}
+	}
+	.mobile-input {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

@@ -13,3 +13,7 @@ body {
   font-size: medium;
   color: #808080;
 }
+
+#root {
+  overflow-x: hidden;
+}

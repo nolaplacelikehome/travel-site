@@ -1,0 +1,30 @@
+@use '../mixins' as query;
+
+.step-col-small {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	@include query.for-mobile {
+		width: auto;
+		margin: 0 10px;
+		gap: 30px;
+	}
+	.small-row {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		@include query.for-mobile {
+			gap: 10px;
+		}
+		.bold {
+			font-weight: bold;
+		}
+		.detail-para {
+			width: 40ch;
+			@include query.for-mobile {
+				text-align: center;
+				width: 35ch;
+			}
+		}
+	}
+}	

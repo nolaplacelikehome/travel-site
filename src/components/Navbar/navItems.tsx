@@ -1,7 +1,7 @@
 export const navItems = [
 	{
 		name: 'How it works',
-		path: '#',
+		path: '#how-it-works',
 		id: '1'
 	},
 	{

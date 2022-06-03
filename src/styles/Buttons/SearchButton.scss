@@ -1,8 +1,14 @@
-button {
-	padding: 10px 20px;
+@use '../mixins' as query;
+
+.search-btn {
+	padding: 10px 30px;
 	border: none;
 	height: 90%;
 	color: white;
 	background-color: #007FFF;
 	font-weight: bold;
+	cursor: pointer;
+	@include query.for-tablet {
+		height: 40px;
+	}
 }

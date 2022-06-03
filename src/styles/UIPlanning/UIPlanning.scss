@@ -1,0 +1,81 @@
+@use '../mixins' as query;
+
+.planning-container {
+	width: 100%;
+	max-height: 550px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 40px;
+	gap: 20px;
+	@include query.for-tablet {
+		max-height: 700px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-left {
+		width: 50%;
+		@include query.for-tablet {
+			display: none;
+		}
+		.circle-container {
+			@include query.on-circle($item-count: 6, $circle-size: 25em, $item-size: 8em);
+			.center-img {
+				width: 250px;
+				height: 250px;
+				position: absolute;
+				bottom: 35%;
+				left: 18%;
+			}
+			margin: 5em auto 0;
+			.icon-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 5px;
+				cursor: pointer;
+				.icon {
+					display: block; 
+					max-width: 100%; 
+					border-radius: 50%;
+					filter: grayscale(100%);
+					transition: .15s;
+					
+					&:hover,
+					&:active {
+						filter: grayscale(0);
+    			}
+				}
+			}
+			@include query.for-tablet {
+				display: none;
+			}
+		}
+	}
+	.description-right {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		max-height: 100%;
+		text-align: center;
+		.p-title {
+			text-transform: uppercase;
+			word-spacing: 2px;
+			letter-spacing: 2px;
+			color: grey;
+			margin-bottom: 10px;
+		}
+		h2 {
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		.p-description {
+			line-height: 1.8em;
+			max-width: 60ch;
+			@include query.for-mobile {
+				width: 35ch;
+			}
+		}
+	}
+}

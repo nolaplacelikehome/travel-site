@@ -1,0 +1,31 @@
+
+.step-col {
+		display: flex;
+		gap: 160px;
+		align-items: center;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		width: 130px;
+		.bold {
+			font-weight: bolder;
+			width: 40ch;
+			text-align: center;
+			font-size: small;
+		}
+		p {
+			text-align: center;
+			width: 30ch;
+			font-size: small;
+		}
+	}
+	.img-responsive {
+		float: left;
+    width:  130px;
+    height: 130px;
+    background-size: cover;
+		margin-bottom: 10px;
+	}

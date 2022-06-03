@@ -1,0 +1,47 @@
+@use '../mixins' as query;
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  @include query.for-small-tablet {
+    gap: 40px;
+  }
+  .img-item {
+    height: 350px;
+    width: 200px;
+    cursor: pointer;
+    .img-text {
+      position: relative;
+      width: 70%;
+      bottom: 50px;
+      left: 10px;
+      color: white;
+      font-size: small;
+      font-weight: bold;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  @include query.for-tablet {
+    .img-5 {
+      display: none;
+    }
+  }
+  @include query.for-small-tablet {
+    .img-4 {
+      display: none;
+    }
+    .img-3 {
+      display: none;
+    }
+  }
+  @include query.for-mobile {
+    .img-2 {
+      display: none;
+    }
+  }
+}

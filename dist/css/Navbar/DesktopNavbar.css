@@ -1,9 +1,25 @@
-.nav-container {
+.desktop-nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 0 20px;
   width: 100%;
+}
+.desktop-nav-container ul {
+  list-style: none;
+}
+.desktop-nav-container ul li {
+  display: inline;
+  padding: 0 20px;
+}
+.desktop-nav-container ul * {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.desktop-nav-container ul *:hover {
+  color: #007FFF;
 }
 
 .brand {

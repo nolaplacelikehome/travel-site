@@ -1,0 +1,36 @@
+.step-col-small {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 575px) {
+  .step-col-small {
+    width: auto;
+    margin: 0 10px;
+    gap: 30px;
+  }
+}
+.step-col-small .small-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 575px) {
+  .step-col-small .small-row {
+    gap: 10px;
+  }
+}
+.step-col-small .small-row .bold {
+  font-weight: bold;
+}
+.step-col-small .small-row .detail-para {
+  width: 40ch;
+}
+@media screen and (max-width: 575px) {
+  .step-col-small .small-row .detail-para {
+    text-align: center;
+    width: 35ch;
+  }
+}
+
+/*# sourceMappingURL=MobileDetail.css.map */

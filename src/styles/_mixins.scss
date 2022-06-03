@@ -1,0 +1,48 @@
+@mixin for-mobile {
+  @media screen and (max-width: 575px) { @content; }
+}
+
+@mixin for-tablet {
+  @media screen and (max-width: 1100px) { @content; }
+}
+
+@mixin for-small-tablet {
+  @media screen and (max-width: 890px) { @content; }
+}
+ 
+@mixin for-desktop {
+  @media screen and (max-width: 2000px) { @content; }
+}
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%; 
+  list-style: none;       
+  
+  > *:not(img) {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
