@@ -1,8 +1,6 @@
 import React from 'react'
 import DesktopNavbar from './DesktopNavbar';
-import MobileNavbar from './MobileNavbar';
-
-import '../../../dist/css/Navbar/DesktopNavbar.css';
+import MobileNavbar from './MobileNavbar';	
 
 import { useMediaQuery } from 'react-responsive';
 

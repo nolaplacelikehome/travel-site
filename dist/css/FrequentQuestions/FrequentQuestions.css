@@ -17,6 +17,7 @@
 .questions-container h2 {
   text-transform: uppercase;
   margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 .questions-container .accordian {
   background-color: white;

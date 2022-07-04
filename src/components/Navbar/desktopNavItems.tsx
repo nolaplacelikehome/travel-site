@@ -6,22 +6,22 @@ export const desktopNavItems = [
 	},
 	{
 		name: 'Start planning',
-		path: '#',
+		path: '#start-planning',
 		id: '2'
 	},
 	{
-		name: 'Blog',
-		path: '#',
+		name: 'FAQ',
+		path: '#faq',
 		id: '3'
 	},
 	{
-		name: 'Reviews',
-		path: '#',
+		name: 'Blog',
+		path: '#blog',
 		id: '4'
 	},
 	{
 		name: 'Contact',
-		path: '#',
+		path: '#contact',
 		id: '5'
 	},
 ];

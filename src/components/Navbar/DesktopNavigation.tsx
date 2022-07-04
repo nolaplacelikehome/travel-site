@@ -3,9 +3,9 @@ import { desktopNavItems } from './desktopNavItems'
 
 export default function DesktopNavigation() {
 	return (
-		<ul>
+		<ul className='desktop-list'>
 			{desktopNavItems.map(item => 
-				<li key={item.id}><a href={item.path}>{item.name}</a></li>
+				<li className='desktop-list-item' key={item.id}><a href={item.path}>{item.name}</a></li>
 			)}	 
 		</ul>
 	)

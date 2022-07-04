@@ -12,8 +12,6 @@ html {
 body {
   font-size: medium;
   color: #808080;
+  overflow-y: visible;
 }
 
-#root {
-  overflow-x: hidden;
-}

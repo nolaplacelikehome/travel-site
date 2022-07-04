@@ -5,20 +5,20 @@
   padding: 20px 20px 0 20px;
   width: 100%;
 }
-.desktop-nav-container ul {
+.desktop-nav-container .desktop-list {
   list-style: none;
 }
-.desktop-nav-container ul li {
+.desktop-nav-container .desktop-list .desktop-list-item {
   display: inline;
   padding: 0 20px;
 }
-.desktop-nav-container ul * {
+.desktop-nav-container .desktop-list * {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   transition: all 0.3s;
 }
-.desktop-nav-container ul *:hover {
+.desktop-nav-container .desktop-list *:hover {
   color: #007FFF;
 }
 

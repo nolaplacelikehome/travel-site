@@ -1,0 +1,76 @@
+.footer-container {
+  height: 300px;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F5F5F5;
+}
+.footer-container .footer-contact {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.footer-container .footer-contact .message {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-container .footer-contact .address {
+  margin-bottom: 15px;
+}
+.footer-container .footer-contact .brand {
+  margin-bottom: 8px;
+}
+.footer-container .footer-contact .street {
+  margin-bottom: 8px;
+}
+.footer-container .footer-contact .city {
+  margin-bottom: 40px;
+}
+.footer-container .footer-contact .support-phone {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 5px;
+}
+.footer-container .about-us {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .about-us .about-us-para {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer-container .about-us .footer-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer-container .about-us .footer-links * {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 15px;
+}
+.footer-container .from-the-blog {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .from-the-blog .blog-para {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+.footer-container .from-the-blog .blog-links {
+  list-style: none;
+}
+.footer-container .from-the-blog .blog-links * {
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: black;
+}
+
+/*# sourceMappingURL=Footer.css.map */

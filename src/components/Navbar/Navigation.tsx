@@ -15,8 +15,8 @@ let variants = {
 export default function Navigation() {
   return(
     <motion.ul variants={variants}>
-      {navItems.map(item =>
-        <MobileNavItem path={item.path} key={item.id} name={item.name} />
+      {navItems.map(({ name, path, id }) =>
+        <MobileNavItem path={path} key={id} name={name} />
     )}
     </motion.ul>
   );

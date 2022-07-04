@@ -6,7 +6,7 @@ import TripDropdown from '../../components/Dropdown/TripDropdown';
 
 export default function TripInspiration() {
 	return (
-		<div className="trip-container">
+		<div className="trip-container" id="start-planning">
 			<p className='tint'>Trip inspiration</p>
 			<h2>Find the perfect places to go for activites and more</h2>
 			<FilterButtons />

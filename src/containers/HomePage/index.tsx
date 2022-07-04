@@ -5,9 +5,9 @@ import DestinationSearch from '../../components/DestinationSearch';
 import TripInspiration from './TripInspiration';
 import UIPlanning from '../../components/UIPlanning/UIPlanning';
 import FrequentQuestions from '../../components/FrequentQuestions';
-
+import Blog from '../../components/Blog/Blog';
+import Footer from '../../components/Footer/Footer';
 import '../../../dist/css/HomePage/HomePage.css';
-
 
 export default function HomePage() {
 	return (
@@ -20,6 +20,8 @@ export default function HomePage() {
 			<TripInspiration />
 			<UIPlanning />
 			<FrequentQuestions />
+			<Blog />
+			<Footer />
 		</div>
 	)
 }

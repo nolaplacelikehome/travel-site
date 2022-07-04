@@ -9,8 +9,8 @@ export default function TripDropdown() {
 				<span>Things to do</span>
 				<div className="dropdown-content">
 					{
-						filterButtonList.map(item =>
-							<p>{item.name}</p>
+						filterButtonList.map(({ name, id }) =>
+							<p key={id} >{name}</p>
 						)
 					}
 				</div>

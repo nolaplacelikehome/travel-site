@@ -23,7 +23,7 @@ type ItemProps = {
   name: string,
 }
 
-export default function MobileNavItem({ path, name }: ItemProps) {
+export default function MenuNavItem({ path, name }: ItemProps) {
   return (
     <motion.li
       variants={variants}

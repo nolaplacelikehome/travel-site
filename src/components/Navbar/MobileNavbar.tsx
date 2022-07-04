@@ -2,7 +2,7 @@ import React, { useRef, MutableRefObject } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import { useDimensions } from './useDimensions';
 import MenuToggle from './MenuToggle';
-import Navigation from './DesktopNavigation';
+import Navigation from './Navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import '../../../dist/css/Navbar/MobileNavbar.css';
