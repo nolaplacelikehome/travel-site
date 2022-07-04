@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.tsx',
+    app: './docs/index.tsx',
   },
   module: {
     rules: [
@@ -28,7 +28,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Production',
-      template: './src/index.html'
+      template: './docs/index.html'
     }),
   ],
   output: {
