@@ -20,7 +20,7 @@ export default function DestinationSearch() {
 				</form>	
 				:
 				<div className='mobile-input'>
-					<input type="text" placeholder='WHERE DO YOU WANT TO GO?' />
+					<input className='mobile-input-form' type="text" placeholder='WHERE DO YOU WANT TO GO?' />
 					<SearchButton />
 				</div>
 			}
